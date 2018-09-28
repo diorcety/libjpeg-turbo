@@ -109,10 +109,7 @@ if(CPU_TYPE STREQUAL "x86_64")
     x86_64/jdmerge-sse2.asm x86_64/jdsample-sse2.asm x86_64/jfdctfst-sse2.asm
     x86_64/jfdctint-sse2.asm x86_64/jidctflt-sse2.asm x86_64/jidctfst-sse2.asm
     x86_64/jidctint-sse2.asm x86_64/jidctred-sse2.asm x86_64/jquantf-sse2.asm
-    x86_64/jquanti-sse2.asm
-    x86_64/jccolor-avx2.asm x86_64/jcgray-avx2.asm x86_64/jcsample-avx2.asm
-    x86_64/jdcolor-avx2.asm x86_64/jdmerge-avx2.asm x86_64/jdsample-avx2.asm
-    x86_64/jfdctint-avx2.asm x86_64/jidctint-avx2.asm x86_64/jquanti-avx2.asm)
+    x86_64/jquanti-sse2.asm)
 else()
   set(SIMD_SOURCES i386/jsimdcpu.asm i386/jfdctflt-3dn.asm
     i386/jidctflt-3dn.asm i386/jquant-3dn.asm
@@ -126,10 +123,7 @@ else()
     i386/jdmerge-sse2.asm i386/jdsample-sse2.asm i386/jfdctfst-sse2.asm
     i386/jfdctint-sse2.asm i386/jidctflt-sse2.asm i386/jidctfst-sse2.asm
     i386/jidctint-sse2.asm i386/jidctred-sse2.asm i386/jquantf-sse2.asm
-    i386/jquanti-sse2.asm
-    i386/jccolor-avx2.asm i386/jcgray-avx2.asm i386/jcsample-avx2.asm
-    i386/jdcolor-avx2.asm i386/jdmerge-avx2.asm i386/jdsample-avx2.asm
-    i386/jfdctint-avx2.asm i386/jidctint-avx2.asm i386/jquanti-avx2.asm)
+    i386/jquanti-sse2.asm)
 endif()
 
 if(MSVC_IDE)
